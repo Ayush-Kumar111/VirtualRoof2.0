@@ -1,209 +1,95 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8";
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width , intial-scale = 1.0">
-        <title>Virtual Roof</title>
-        <link rel="stylesheet" href = "style_vr.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    </head>
-    <body>
-        <header>
-            <div class = "nav container">
-                <a href="index.html" class="logo"><i class='bx bx-home'></i>Virtual Roof</a>
-
-                <input type = "checkbox" name = "" id = "menu">
-                <label for = "menu" <i class='bx bx-menu' id="menu-icon"></i></label>
-                <ul class = "navbar">
-                    <li><a href = "#home">Home</a></li>
-                    <li><a href = "#about">About Us</a></li>
-                    <li><a href = "#sales">Sales</a></li>
-                    <li><a href = "#properties">Properties</a></li>
-                </ul>                
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Portal</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="email" placeholder="Email" id="email_signin" />
             </div>
-        </header>
-
-        <section class="home container" id="home">
-            <div class="home-text">
-                <h1>Find Your Next <br>Perfect place To <br>Live.</h1>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                placeholder="Password"
+                id="psw_signin"
+                autocomplete="new-password"
+              />
             </div>
-            <div class="search-wrapper">
-                <input type="text" placeholder="Search...">
-                <button type="submit"></button>
+            <input
+              type="submit"
+              value="Login"
+              id="signin-button"
+              class="btn solid"
+            />
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Name" id="name" />
             </div>
-        </section>
-
-        <section class="about container" id="about">
-            <div class="about-img">
-                <img src="Images/about.jpg" alt="">
+            <div class="input-field">
+              <i class="fas fa-phone"></i>
+              <input type="text" placeholder="Phone Number" id="nohp" />
             </div>
-            <div class="about-text">
-                <span>About Us</span>
-                <h2>We Provide The Best <br>Property For You !</h2>
-                <p>To make the buying and selling of homes easier.....</p>
-                <p>Virtual tour of properties is the only solution.</p>
-                <p>Virtual Roof ek naya aasama.</p>
-                <a href="#" class="btn">Learn More</a>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" id="email_signup" />
             </div>
-        </section>
-        
-        <section class="sales container" id="sales">
-            <div class="box">
-                <i class='bx bx-user'></i>
-                <h3>Make Your Dream True</h3>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                placeholder="Password"
+                id="psw_signup"
+                autocomplete="new-password"
+              />
             </div>
-
-            <div class="box">
-                <i class='bx bx-desktop'></i>
-                <h3>Start Your Membershiip</h3>
-            </div>
-
-            <div class="box">
-                <i class='bx bx-home-alt'></i>
-                <h3>Enjoy Your New Home</h3>
-            </div>
-        </section>
-        
-
-        <section class="properties container" id="properties">
-            <div class="heading">
-                <span>Recent</span>
-                <h2>Our Featured Properties</h2>
-                <p>Virtual Roof ek naya aasaman!!!</p>
-            </div>
-            <div class="properties-container container">
-                
-                <div class="box">
-                    <img src="Images/1.1.jpeg" alt="">
-                    <h3><a href=https://the360studio.in/tours/CommponentsGym/>Component Fitness</a></h3>
-                    <div class="content">
-                        <div class="text">
-                            <p>Malviya Nagar</p>
-                            <p>New Delhi</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="box">
-                    <img src="Images/2.jpg" alt="">
-                    <h3><a href=FirstTour/index.html>The Palace</a></h3>
-                    <div class="content">
-                        <div class="text">
-                            <h3>The Palace</h3>
-                            <p>London, UK</p>
-                        </div>
-                        <div class="icon">
-                            <i class='bx bx-bed'><span>5</span></i>
-                            <i class='bx bx-bath'><span>2</span></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="box">
-                    <img src="Images/3.jpg" alt="">
-                    <h3>The Palace</h3>
-                    <div class="content">
-                        <div class="text">
-                            <h3>The Palace</h3>
-                            <p>London, UK</p>
-                        </div>
-                        <div class="icon">
-                            <i class='bx bx-bed'><span>5</span></i>
-                            <i class='bx bx-bath'><span>2</span></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="box">
-                    <img src="Images/4.jpg" alt="">
-                    <h3>The Palace</h3>
-                    <div class="content">
-                        <div class="text">
-                            <h3>The Palace</h3>
-                            <p>London, UK</p>
-                        </div>
-                        <div class="icon">
-                            <i class='bx bx-bed'><span>5</span></i>
-                            <i class='bx bx-bath'><span>2</span></i>
-                        </div>
-                    </div>
-                </div>
-                <!--Box5-->
-                <div class="box">
-                    <img src="Images/5.jpg" alt="">
-                    <h3>The Palace</h3>
-                    <div class="content">
-                        <div class="text">
-                            <h3>The Palace</h3>
-                            <p>London, UK</p>
-                        </div>
-                        <div class="icon">
-                            <i class='bx bx-bed'><span>5</span></i>
-                            <i class='bx bx-bath'><span>2</span></i>
-                        </div>
-                    </div>
-                </div>
-                <!--Box6-->
-                <div class="box">
-                    <img src="Images/6.jpg" alt="">
-                    <h3>The Palace</h3>
-                    <div class="content">
-                        <div class="text">
-                            <h3>The Palace</h3>
-                            <p>London, UK</p>
-                        </div>
-                        <div class="icon">
-                            <i class='bx bx-bed'><span>5</span></i>
-                            <i class='bx bx-bath'><span>2</span></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!--Newsletter-->
-        <section class = "newsletter container">
-            <h2>Have Question in mind? <br> Let us help you</h2>
-            <form action = "">
-                <input type="email" name="" id="email-box" placeholder="yourmail@gmail.com" required>
-                <input type="submit" value="Send" class="btn">
-            </form>
-        </section>
-
-        <section class="footer">
-            <div class="footer-container container">
-                <h2>Virtual Roof</h2>
-                <div class="footer-box">
-                    <h3>Quick Links</h3>
-                    <a href="#">Agency</a>
-                    <a href="#">Building</a>
-                    <a href="#">Rates</a>
-                </div>
-                <div class="footer-box">
-                    <h3>Locations</h3>
-                    <a href="#">Delhi</a>
-                    <a href="#">Mumbai</a>
-                    <a href="#">Banglore</a>
-                </div>
-                <div class="footer-box">
-                    <h3>Contact</h3>
-                    <a href="#"> +91 9354384280</a>
-                    <a href="#">yourmail@gmail.com</a>
-                    <div class="social">
-                        <a href="#"><i class='bx bxl-instagram'></i></a>
-                        <a href="#"><i class='bx bxl-linkedin'></i></a>
-                        <a href="#"><i class='bx bxl-twitter' ></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="copyright">
-            <p>&#169; VirtualRoof All Right Reserved</p>
+            <input
+              type="submit"
+              class="btn"
+              id="signup-button"
+              value="Sign up"
+            />
+          </form>
         </div>
-        
-    </body>
+      </div>
 
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>Join us now!!!</p>
+            <button class="btn transparent" id="sign-up-btn">Sign up</button>
+          </div>
+          <img src="img/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>Sign in Now!!!</p>
+            <button class="btn transparent" id="sign-in-btn">Sign in</button>
+          </div>
+          <img src="img/register.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="myscript.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>

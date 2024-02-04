@@ -76,7 +76,7 @@ signinButton.addEventListener("click", (e) => {
       })
         .then(() => {
           // Data saved successfully!
-          location.href = "index.html";
+          location.href = "home.html";
         })
         .catch((error) => {
           //the write failed
