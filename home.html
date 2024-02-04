@@ -20,6 +20,7 @@
                     <li><a href = "#about">About Us</a></li>
                     <li><a href = "#sales">Sales</a></li>
                     <li><a href = "#properties">Properties</a></li>
+                    <li><button id="logout-button" value="ok" style="width: 90px; height: 35px; border-radius: 15px;">Logout</button></li>
                 </ul>                
             </div>
         </header>
@@ -203,6 +204,39 @@
         <div class="copyright">
             <p>&#169; VirtualRoof All Right Reserved</p>
         </div>
+        <script type="module">
+            import {
+              getAuth,
+              signOut,
+            } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+      
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyD2TvE3Jz-Z4-psi8zGRwajv2olKme-g1E",
+              authDomain: "dmrclogin.firebaseapp.com",
+              databaseURL: "https://dmrclogin-default-rtdb.firebaseio.com",
+              projectId: "dmrclogin",
+              storageBucket: "dmrclogin.appspot.com",
+              messagingSenderId: "488751840859",
+              appId: "1:488751840859:web:074348edecb8f1ce46497e",
+            };
+      
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            let logoutButton = document.getElementById("logout-button");
+            console.log(logoutButton);
+      
+            logoutButton.addEventListener("click", (e) => {
+              const auth = getAuth(app);
+              signOut(auth)
+                .then(() => {
+                  alert("*****Visit us soon for your DREAM HOUSE*****");
+                  location.href = "index.html";
+                })
+                .catch((error) => {});
+            });
+          </script>
         
     </body>
 
